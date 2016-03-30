@@ -80,12 +80,12 @@ alias ~~='subl ~'
 alias bp='subl ~/.bash_profile'
 alias br='subl ~/.bashrc'
 
-alias p2='ptipython'
-alias p3='ptipython3'
-
 eval $(thefuck --alias)
 
 # Only source .bashrc for interactive sessions
 case $- in
    *i*) source ~/.bashrc
 esac
+
+# Only source this file in interactive shells, not from a script or from scp
+[[ $- = *i* ]] && source ~/.bash_profile_interactive
