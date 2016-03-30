@@ -32,7 +32,8 @@ alias very=git
 alias much=git
 alias many=git
 alias wow='git status'
-alias amaze='git pull --rebase'
+alias amaze='git push'
 # wow
 # such commit
-# very push
+# very pull
+# amaze
