@@ -61,6 +61,9 @@ alias gau='git add --update && git status'
 alias gu='git add --update && git status'
 alias gr='git reset'
 alias grs='git reset --soft'
+alias gf='git fetch'
+alias gp='git pull'
+alias gpr='git pull --rebase'
 alias regit='git stash && git pull --rebase && git stash pop'
 
 alias such=git
