@@ -35,7 +35,7 @@ cd () { builtin cd "$@" && ls; }
 # PROMPT_COMMAND="${PROMPT_COMMAND} && ls"
 
 alias v='less -RS'
-alias e='$EDITOR'
+alias e='subl'
 
 alias ag='ag --color-match="1;35" --smart-case --pager "less -R -S"'
 alias agp='ag --py'
