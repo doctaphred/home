@@ -1,5 +1,7 @@
 alias gs='git status'
 alias gsh='git show'
+alias gshn='git show --name-only'
+alias gsn='git show --name-only'
 alias gst='git stash'
 alias gsp='git stash pop'
 alias gd='git diff'
