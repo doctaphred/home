@@ -43,3 +43,7 @@ alias amaze='git push'
 # such commit
 # very pull
 # amaze
+
+
+# bash completion
+source /usr/local/etc/bash_completion.d/git-completion.bash
