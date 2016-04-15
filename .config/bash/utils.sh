@@ -6,3 +6,12 @@ trim-whitespace () {
     find . -not \( -name .svn -prune -o -name .git -prune \) -type f -print0 | xargs -0 sed -i '' -E "s/[[:space:]]*$//"
     # find dir -type f -exec sed -i 's/ *$//' '{}' ';'
 }
+
+setmic () {
+    osascript -e "tell application \"System Events\" to set volume input volume $1"
+}
+
+# Mute microphone
+alias mm='setmic 0'
+# Unmute microphone
+alias umm='setmic 50'
