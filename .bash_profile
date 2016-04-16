@@ -34,8 +34,8 @@ export CLICOLOR=1
 alias la='ls -A'
 alias ll='ls -Alh'
 
-cd () { builtin cd "$@" && ls; }
-# PROMPT_COMMAND="${PROMPT_COMMAND} && ls"
+# ls-after-cd, from http://pastebin.com/VBSQJyeA
+PROMPT_COMMAND='[[ ${__new_wd:=$PWD} != $PWD ]] && ls; __new_wd=$PWD'
 
 alias v='less -RS'
 alias e='subl'
