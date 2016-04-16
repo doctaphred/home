@@ -1,5 +1,3 @@
-# source ~/.bashrc
-
 alias rebp='source ~/.bash_profile'
 
 # Disable caching, 'cause it sucks
@@ -49,11 +47,6 @@ alias br='subl ~/.bashrc'
 eval $(thefuck --alias)
 
 alias ackbar='afplay ~/Dropbox/etc/ackbar.mp3'
-
-# Only source .bashrc for interactive sessions
-case $- in
-   *i*) source ~/.bashrc
-esac
 
 # Only source this file in interactive shells, not from a script or from scp
 [[ $- = *i* ]] && source ~/.config/bash-interactive.sh
