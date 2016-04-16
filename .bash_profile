@@ -2,6 +2,10 @@
 
 alias rebp='source ~/.bash_profile'
 
+# Disable caching, 'cause it sucks
+# https://twitter.com/doctaphred/status/721423180414480384
+set +h
+
 # Django localization utilities
 PATH=$PATH:/usr/local/opt/gettext/bin
 
