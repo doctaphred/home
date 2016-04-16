@@ -6,9 +6,6 @@ alias rebp='source ~/.bash_profile'
 # https://twitter.com/doctaphred/status/721423180414480384
 set +h
 
-# Django localization utilities
-PATH=$PATH:/usr/local/opt/gettext/bin
-
 color_off='\[\e[0m\]'
 black='\[\e[0;30m\]'
 red='\[\e[0;31m\]'
