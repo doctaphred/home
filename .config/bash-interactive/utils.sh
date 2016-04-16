@@ -15,3 +15,8 @@ setmic () {
 alias mm='setmic 0'
 # Unmute microphone
 alias umm='setmic 50'
+
+# Copy working directory to clipboard
+cpwd () {
+    echo $PWD | pbcopy
+}
