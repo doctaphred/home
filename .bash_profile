@@ -36,7 +36,7 @@ cd () { builtin cd "$@" && ls; }
 alias v='less -RS'
 alias e='subl'
 
-alias ag='ag --color-match="1;35" --smart-case --pager "less -R -S"'
+alias ag='ag --color-match="1;35" --smart-case --pager "less -R -S" --skip-vcs-ignores'
 alias agp='ag --py'
 alias agj='ag --js'
 
