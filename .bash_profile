@@ -4,6 +4,9 @@ alias rebp='source ~/.bash_profile'
 # https://twitter.com/doctaphred/status/721423180414480384
 set +h
 
+# cd by typing a directory's name
+shopt -s autocd
+
 color_off='\[\e[0m\]'
 black='\[\e[0;30m\]'
 red='\[\e[0;31m\]'
@@ -14,21 +17,22 @@ purple='\[\e[0;35m\]'
 cyan='\[\e[0;36m\]'
 gray='\[\e[0;37m\]'
 
+# This will get overwritten by liquidprompt, if it's installed.
 export PS1="${green}\u@\h:${cyan}\w${color_off}$ "
-
-export CLICOLOR=1
 
 export EDITOR='subl -w'
 
+# mkdir, then cd into it. Surprisingly useful.
 take () {
     mkdir -p $1
     cd $1
 }
 
+# Enable ls colors
+export CLICOLOR=1
+
 alias la='ls -A'
 alias ll='ls -Alh'
-
-shopt -s autocd
 
 cd () { builtin cd "$@" && ls; }
 # PROMPT_COMMAND="${PROMPT_COMMAND} && ls"
