@@ -37,5 +37,5 @@ o() {
 # Search file contents
 af() {
  # ag --nobreak --nonumbers --noheading . | fzf
- ag --nobreak --noheading --hidden --skip-vcs-ignores $@ . | fzf
+ ag --nobreak --noheading --hidden $@ . | fzf
 }

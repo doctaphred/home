@@ -56,4 +56,4 @@ case $- in
 esac
 
 # Only source this file in interactive shells, not from a script or from scp
-[[ $- = *i* ]] && source ~/.bash_profile_interactive
+[[ $- = *i* ]] && source ~/.config/bash-interactive.sh
