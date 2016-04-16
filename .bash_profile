@@ -34,6 +34,11 @@ export CLICOLOR=1
 alias la='ls -A'
 alias ll='ls -Alh'
 
+# List directories
+lsd () {
+    ls -F "$@" | grep \/$
+}
+
 # ls-after-cd, from http://pastebin.com/VBSQJyeA
 PROMPT_COMMAND='[[ ${__new_wd:=$PWD} != $PWD ]] && ls; __new_wd=$PWD'
 
