@@ -23,6 +23,7 @@ alias gp='git pull'
 alias gpr='git pull --rebase'
 alias regit='git stash && git pull --rebase && git stash pop'
 alias gpu='git push'
+alias gpuf='git push --force-with-lease'
 
 ga() {
     git add $@
