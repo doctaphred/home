@@ -10,8 +10,6 @@ alias gsp='git stash pop'
 alias gd='git diff'
 alias gdc='git diff --cached'
 alias gb='git branch'
-alias gl='git log'
-alias glg='git log --grep'
 alias gc='git commit --verbose'
 alias gca='git commit --amend'
 alias regc='git commit --amend'
@@ -32,6 +30,18 @@ ga() {
 }
 alias gu='ga --update'
 alias gau='gu'
+
+gl () {
+    # %h: abbreviated commit hash
+    # %d: ref names, like the --decorate option of git-log(1)
+    # %s: subject
+    # %cr: committer date, relative
+    # %an: author name
+    git log --pretty=format:'%C(yellow)%h%C(red)%d%C(reset) %s %C(magenta)(%cr)%C(reset) %C(green)<%an>%C(reset)' $@
+}
+
+alias glg='gl | ag'
+alias gll='git log'
 
 alias such=git
 alias very=git
