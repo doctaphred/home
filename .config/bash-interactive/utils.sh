@@ -21,6 +21,8 @@ cpwd () {
     echo $PWD | pbcopy
 }
 
+# NOTE: the built-in `open` program handles URLs!
+
 # Open Google Chrome
 chrome () {
     open -a "Google Chrome" $@
