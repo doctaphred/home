@@ -32,7 +32,8 @@ take () {
 export CLICOLOR=1
 
 alias la='ls -A'
-alias ll='ls -Alh'
+alias ll='ls -lh'
+alias lla='ls -Alh'
 
 # List directories
 lsd () {
