@@ -37,3 +37,7 @@ firefox () {
 safari () {
     open -a Safari $@
 }
+
+path () {
+    echo $PATH | tr -s ":" "\n"
+}
