@@ -27,16 +27,13 @@ cpwd () {
 chrome () {
     open -a "Google Chrome" $@
 }
-alias c=chrome
 
 # Open Firefox
 firefox () {
     open -a Firefox $@
 }
-alias ff=firefox
 
 # Open Safari
 safari () {
     open -a Safari $@
 }
-alias saf=safari
