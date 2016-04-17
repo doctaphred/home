@@ -45,7 +45,7 @@ PROMPT_COMMAND='[[ ${__new_wd:=$PWD} != $PWD ]] && ls; __new_wd=$PWD'
 alias v='less -RS'
 alias e='subl'
 
-alias ag='ag --color-match="1;35" --smart-case --pager "less -R -S" --skip-vcs-ignores'
+alias ag='ag --smart-case --pager "less -R -S" --skip-vcs-ignores'
 alias agp='ag --py'
 alias agj='ag --js'
 
