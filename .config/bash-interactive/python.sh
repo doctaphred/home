@@ -1,4 +1,5 @@
-alias p='ptipython'
+alias pt='python -m ptpython'
+alias ip='ptipython'
 
 export WORKON_HOME=$HOME/.virtualenvs
 export PROJECT_HOME=$HOME/dev
