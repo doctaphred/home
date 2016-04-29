@@ -1,5 +1,12 @@
 # liquidprompt: https://github.com/nojhan/liquidprompt
-source ~/liquidprompt/liquidprompt
+if [ -f /usr/local/share/liquidprompt ]; then
+    source /usr/local/share/liquidprompt
+fi
+
+# TODO: remove when properly installed across whole fleet
+if [ -f ~/liquidprompt/liquidprompt ]; then
+    source ~/liquidprompt/liquidprompt
+fi
 
 # fzf: https://github.com/junegunn/fzf
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
