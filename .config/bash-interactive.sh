@@ -12,3 +12,6 @@ fi
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
 
 for f in ~/.config/bash-interactive/*; do source $f; done
+
+# direnv: https://github.com/direnv/direnv
+eval "$(direnv hook bash)"
