@@ -50,7 +50,7 @@ def configure(repl):
     repl.wrap_lines = True
 
     # Mouse support.
-    repl.enable_mouse_support = True
+    repl.enable_mouse_support = False
 
     # Complete while typing. (Don't require tab before the
     # completion menu is shown.)
@@ -62,7 +62,7 @@ def configure(repl):
     # Paste mode. (When True, don't insert whitespace after new line.)
     repl.paste_mode = False
 
-    repl.prompt_style = 'ipython'  # 'classic' or 'ipython'
+    # repl.prompt_style = 'ipython'  # 'classic' or 'ipython'
 
     repl.insert_blank_line_after_output = True
 
