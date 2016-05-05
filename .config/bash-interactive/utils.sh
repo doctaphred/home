@@ -29,7 +29,7 @@ chrome () {
 }
 
 # Open Firefox
-firefox () {
+ff () {
     open -a Firefox $@
 }
 
