@@ -50,6 +50,8 @@ alias ag='ag --smart-case --pager "less -R -S" --skip-vcs-ignores'
 alias agp='ag --py'
 alias agj='ag --js'
 
+alias myip='dig +short myip.opendns.com @resolver1.opendns.com'
+
 alias ~~='subl ~'
 alias bp='subl ~/.bash_profile'
 alias br='subl ~/.bashrc'
