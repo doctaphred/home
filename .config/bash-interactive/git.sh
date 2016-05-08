@@ -44,6 +44,18 @@ gl () {
 alias glg='gl | ag'
 alias gll='git log'
 
+gcl() {
+    git clone git@$1.git
+}
+
+ghcl() {
+    git clone git@github.com:$1.git
+}
+
+bbcl() {
+    git clone git@bitbucket.com:$1.git
+}
+
 alias such=git
 alias very=git
 alias much=git
