@@ -1,5 +1,9 @@
 alias rebp='source ~/.bash_profile'
 
+include () {
+    [[ -f "$1" ]] && source "$1"
+}
+
 # Disable caching, 'cause it sucks
 # https://twitter.com/doctaphred/status/721423180414480384
 set +h
