@@ -5,13 +5,9 @@
     email = doctaphred@gmail.com
 [push]
     default = current
-[pull]
-    rebase = true
 [rebase]
     autoSquash = true
     autoStash = true
-[merge]
-    ff = only
 [alias]
     aa = add --all
     ap = add --patch
