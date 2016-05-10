@@ -1,4 +1,4 @@
-alias rebp='source ~/.bash_profile'
+alias repr='source ~/.profile'
 
 include () {
     [[ -f "$1" ]] && source "$1"
@@ -55,7 +55,7 @@ alias agp='ag --py'
 alias agj='ag --js'
 
 alias ~~='subl ~'
-alias bp='subl ~/.bash_profile'
+alias pr='subl ~/.profile'
 
 eval $(thefuck --alias)
 
