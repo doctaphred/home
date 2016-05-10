@@ -56,7 +56,6 @@ alias agj='ag --js'
 
 alias ~~='subl ~'
 alias bp='subl ~/.bash_profile'
-alias br='subl ~/.bashrc'
 
 eval $(thefuck --alias)
 
