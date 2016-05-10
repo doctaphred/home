@@ -21,6 +21,8 @@ cpwd () {
     echo $PWD | pbcopy
 }
 
+alias myip='dig +short myip.opendns.com @resolver1.opendns.com'
+
 # NOTE: the built-in `open` program handles URLs!
 
 # Open Google Chrome
