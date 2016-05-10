@@ -49,11 +49,13 @@ gcl() {
 }
 
 ghcl() {
-    git clone git@github.com:$1.git
+    git clone git@github.com:$1/$2.git
+    cd $2
 }
 
 bbcl() {
-    git clone git@bitbucket.com:$1.git
+    git clone git@bitbucket.com:$1/$2.git
+    cd $2
 }
 
 alias such=git
