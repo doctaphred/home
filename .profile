@@ -46,6 +46,8 @@ export CLICOLOR=1
 alias la='ls -A'
 alias ll='ls -lh'
 alias lla='ls -Alh'
+alias lal='ls -Alh'
+alias lah='ls -lAh'
 
 # List directories
 lsd () {
