@@ -1,3 +1,6 @@
 [submodule "dist/preexec"]
     path = dist/preexec
     url = https://github.com/doctaphred/preexec
+[submodule "dist/fzf"]
+	path = dist/fzf
+	url = https://github.com/doctaphred/fzf
