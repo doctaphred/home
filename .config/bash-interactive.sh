@@ -1,13 +1,3 @@
-# liquidprompt: https://github.com/nojhan/liquidprompt
-if [ -f /usr/local/share/liquidprompt ]; then
-    source /usr/local/share/liquidprompt
-fi
-
-# TODO: remove when properly installed across whole fleet
-if [ -f ~/liquidprompt/liquidprompt ]; then
-    source ~/liquidprompt/liquidprompt
-fi
-
 for f in ~/.config/bash-interactive/*; do source $f; done
 
 # direnv: https://github.com/direnv/direnv

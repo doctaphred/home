@@ -4,3 +4,6 @@
 [submodule "dist/fzf"]
 	path = dist/fzf
 	url = https://github.com/doctaphred/fzf
+[submodule "dist/liquidprompt"]
+	path = dist/liquidprompt
+	url = https://github.com/doctaphred/liquidprompt

@@ -1,0 +1,1 @@
+source ~/dist/liquidprompt/liquidprompt
