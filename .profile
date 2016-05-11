@@ -21,14 +21,16 @@ color_off='\[\e[0m\]'
 black='\[\e[0;30m\]'
 red='\[\e[0;31m\]'
 green='\[\e[0;32m\]'
+bold_green='\[\e[01;32m\]'
 yellow='\[\e[0;33m\]'
 blue='\[\e[0;34m\]'
+bold_blue='\[\e[01;34m\]'
 purple='\[\e[0;35m\]'
 cyan='\[\e[0;36m\]'
 gray='\[\e[0;37m\]'
 
 # This will get overwritten by liquidprompt, if it's installed.
-export PS1="${green}\u@\h:${cyan}\w${color_off}$ "
+export PS1="${bold_green}\u@\h${color_off}:${bold_blue}\w${color_off}$ "
 
 export EDITOR='subl -w'
 
