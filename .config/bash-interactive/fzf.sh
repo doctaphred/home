@@ -1,3 +1,19 @@
+# fzf: https://github.com/junegunn/fzf
+
+# Man path
+# --------
+if [[ ! "$MANPATH" == *~/dist/fzf/man* && -d ~/dist/fzf/man ]]; then
+  export MANPATH="$MANPATH":~/dist/fzf/man
+fi
+
+# Auto-completion
+# ---------------
+[[ $- == *i* ]] && source ~/dist/fzf/shell/completion.bash 2> /dev/null
+
+# Key bindings
+# ------------
+source ~/dist/fzf/shell/key-bindings.bash
+
 # export FZF_DEFAULT_COMMAND='ag -g ""'
 
 # # Use ag instead of the default find command for listing candidates.

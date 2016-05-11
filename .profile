@@ -4,6 +4,12 @@ include () {
     [[ -f "$1" ]] && source "$1"
 }
 
+export PATH=~/bin:$PATH
+
+# Add platform-specific binaries to path
+# ex: ~/bin/"$(uname -s)"-"$(uname -m)" => ~/bin/Darwin-x86_64
+export PATH=~/bin/"$(uname -s)"-"$(uname -m)":$PATH
+
 # Disable caching, 'cause it sucks
 # https://twitter.com/doctaphred/status/721423180414480384
 set +h

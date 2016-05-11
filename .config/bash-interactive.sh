@@ -8,9 +8,6 @@ if [ -f ~/liquidprompt/liquidprompt ]; then
     source ~/liquidprompt/liquidprompt
 fi
 
-# fzf: https://github.com/junegunn/fzf
-[ -f ~/.fzf.bash ] && source ~/.fzf.bash
-
 for f in ~/.config/bash-interactive/*; do source $f; done
 
 # direnv: https://github.com/direnv/direnv
