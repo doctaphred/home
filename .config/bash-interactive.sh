@@ -22,3 +22,16 @@ if [ "$PWD" == ~ ]; then
     # TODO: there *must* be a better way!
     export DIRENV_LOG_FORMAT=
 fi
+
+# Set up preexec
+source ~/dist/preexec/preexec.bash
+
+# function preexec () {
+#     echo preexec
+# }
+
+# function precmd () {
+#     echo precmd
+# }
+
+preexec_install
