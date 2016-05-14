@@ -1,12 +1,12 @@
 [submodule "dist/preexec"]
     path = dist/preexec
-    url = https://github.com/doctaphred/preexec
+    url = git@github.com:doctaphred/preexec.git
 [submodule "dist/fzf"]
-	path = dist/fzf
-	url = https://github.com/doctaphred/fzf
+    path = dist/fzf
+    url = git@github.com:doctaphred/fzf.git
 [submodule "dist/liquidprompt"]
-	path = dist/liquidprompt
-	url = https://github.com/doctaphred/liquidprompt
+    path = dist/liquidprompt
+    url = git@github.com:doctaphred/liquidprompt.git
 [submodule "dist/rmate"]
-	path = dist/rmate
-	url = git@github.com:doctaphred/rmate.git
+    path = dist/rmate
+    url = git@github.com:doctaphred/rmate.git
