@@ -7,3 +7,6 @@
 [submodule "dist/liquidprompt"]
 	path = dist/liquidprompt
 	url = https://github.com/doctaphred/liquidprompt
+[submodule "dist/rmate"]
+	path = dist/rmate
+	url = git@github.com:doctaphred/rmate.git
