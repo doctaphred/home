@@ -1,14 +1,22 @@
-# Ignore everything...
-*
+# Ignore everything in the top level...
+# (Leading slash prevents the * from applying recursively)
+/*
 
 # ...except for these...
-!.config/*
-!dist/*
+!.config/
+!bin/
+!dist/
+!fun/
+!links/
+!me/
+!scripts/
 
 # ...but still ignore these:
-
-.config/bash-interactive/private.sh
 .config/direnv/allow
+.config/fish/fish_history
+.config/fish/fishd*
+.config/gtk-2.0/gtkfilechooser.ini
+.config/filezilla
 
 .DS_Store
 __pycache__/
