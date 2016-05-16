@@ -1,4 +1,4 @@
-for f in ~/.config/bash-interactive/*; do source $f; done
+include-all ~/.config/bash-interactive
 
 # direnv: https://github.com/direnv/direnv
 eval "$(direnv hook bash)"
