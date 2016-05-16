@@ -24,6 +24,9 @@ cpwd () {
 alias getip='dig +short myip.opendns.com @resolver1.opendns.com'
 alias cpip='getip | pbcopy'
 
+alias getip-local='ipconfig getifaddr en0'
+alias cpip-local='getip-local | pbcopy'
+
 # NOTE: the built-in `open` program handles URLs!
 
 # Open Google Chrome
