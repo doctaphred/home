@@ -21,7 +21,8 @@ cpwd () {
     echo $PWD | pbcopy
 }
 
-alias myip='dig +short myip.opendns.com @resolver1.opendns.com'
+alias getip='dig +short myip.opendns.com @resolver1.opendns.com'
+alias cpip='getip | pbcopy'
 
 # NOTE: the built-in `open` program handles URLs!
 
