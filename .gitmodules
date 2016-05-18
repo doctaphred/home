@@ -12,7 +12,7 @@
     url = git@github.com:doctaphred/rmate.git
 [submodule "dist/direnv"]
 	path = dist/direnv
-	url = https://github.com/doctaphred/direnv
+	url = git@github.com:doctaphred/direnv.git
 [submodule "dist/fabricate"]
 	path = dist/fabricate
 	url = git@github.com:doctaphred/fabricate.git
