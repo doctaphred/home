@@ -13,3 +13,6 @@
 [submodule "dist/direnv"]
 	path = dist/direnv
 	url = https://github.com/doctaphred/direnv
+[submodule "dist/fabricate"]
+	path = dist/fabricate
+	url = git@github.com:doctaphred/fabricate.git
