@@ -10,3 +10,6 @@
 [submodule "dist/rmate"]
     path = dist/rmate
     url = git@github.com:doctaphred/rmate.git
+[submodule "dist/direnv"]
+	path = dist/direnv
+	url = https://github.com/doctaphred/direnv
