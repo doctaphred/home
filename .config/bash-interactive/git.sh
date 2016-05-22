@@ -71,6 +71,4 @@ alias amaze='git push'
 
 
 # bash completion
-if [ -f /usr/local/etc/bash_completion.d/git-completion.bash ]; then
-    source /usr/local/etc/bash_completion.d/git-completion.bash
-fi
+include /usr/local/etc/bash_completion.d/git-completion.bash
