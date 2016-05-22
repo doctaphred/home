@@ -51,3 +51,8 @@ safari () {
 path () {
     echo $PATH | tr -s ":" "\n"
 }
+
+json-to-yaml () {
+    # json-to-yaml < file.json > newfile.yaml
+    ruby -ryaml -rjson -e 'puts YAML.dump(JSON.parse(STDIN.read))'
+}
