@@ -7,14 +7,18 @@ trim-whitespace () {
     # find dir -type f -exec sed -i 's/ *$//' '{}' ';'
 }
 
+setvol () {
+    osascript -e "tell application \"System Events\" to set volume output volume $1"
+}
+
 setmic () {
     osascript -e "tell application \"System Events\" to set volume input volume $1"
 }
 
-# Mute microphone
-alias mm='setmic 0'
-# Unmute microphone
-alias umm='setmic 50'
+alias mute='setvol 0'
+alias unmute='setvol 50'
+alias mutemic='setmic 0'
+alias unmutemic='setmic 50'
 
 # Copy working directory to clipboard
 cpwd () {
