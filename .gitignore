@@ -12,11 +12,23 @@
 !scripts/
 
 # ...but still ignore these:
+.config/dconf/
 .config/direnv/allow
+.config/enchant/
+.config/evolution/
+.config/filezilla
 .config/fish/fish_history
 .config/fish/fishd*
+.config/gedit/
+.config/gnome-initial-setup-done
 .config/gtk-2.0/gtkfilechooser.ini
-.config/filezilla
+.config/gtk-3.0/
+.config/ibus/
+.config/nautilus/
+.config/pulse/
+.config/user-dirs.dirs
+.config/user-dirs.locale
+.config/yelp/
 
 .DS_Store
 __pycache__/
