@@ -1,4 +1,3 @@
-alias repr='source ~/.profile'
 
 # Source the file, if it exists
 include() {
