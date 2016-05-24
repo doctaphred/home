@@ -1,0 +1,10 @@
+#!/bin/sh
+
+cd ~
+git init
+git remote add origin git@github.com:doctaphred/home.git
+git fetch
+git reset origin/master
+git branch -u origin/master  # if using older version of git
+git submodule update --init
+echo 'Commit any local diffs you want to keep, then `git checkout .`'
