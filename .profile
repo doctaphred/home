@@ -15,6 +15,18 @@ export PATH=~/bin:$PATH
 # ex: ~/bin/"$(uname -s)"-"$(uname -m)" => ~/bin/Darwin-x86_64
 export PATH=~/bin/"$(uname -s)"-"$(uname -m)":$PATH
 
+# ls-after-cd, from http://pastebin.com/VBSQJyeA
+PROMPT_COMMAND='[[ ${__new_wd:=$PWD} != $PWD ]] && ls; __new_wd=$PWD'
+
+# Better history management, from http://unix.stackexchange.com/a/48113/134011
+export HISTCONTROL=ignoredups:erasedups  # no duplicate entries
+export HISTSIZE=100000                   # big big history
+export HISTFILESIZE=100000               # big big history
+shopt -s histappend                      # append to history, don't overwrite it
+
+# Save and reload the history after each command finishes
+export PROMPT_COMMAND="history -a; history -c; history -r; $PROMPT_COMMAND"
+
 # Disable caching, 'cause it sucks
 # https://twitter.com/doctaphred/status/721423180414480384
 set +h
@@ -60,8 +72,6 @@ lsd () {
     ls -F "$@" | grep \/$
 }
 
-# ls-after-cd, from http://pastebin.com/VBSQJyeA
-PROMPT_COMMAND='[[ ${__new_wd:=$PWD} != $PWD ]] && ls; __new_wd=$PWD'
 export LESS="\
 --chop-long-lines \
 --HILITE-UNREAD \
