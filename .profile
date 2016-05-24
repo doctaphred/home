@@ -98,8 +98,6 @@ alias agj='ag --js'
 alias ~~='subl ~'
 alias pr='subl ~/.profile'
 
-eval $(thefuck --alias)
-
 alias ackbar='afplay ~/Dropbox/etc/ackbar.mp3'
 
 # Only source this file in interactive shells, not from a script or from scp
