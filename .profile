@@ -71,11 +71,12 @@ export LESS="\
 --RAW-CONTROL-CHARS \
 "
 
-v () {
+vv () {
     # View the command's stdout and stderr in less.
     $@ 2>&1 | less
 }
 
+alias v=less
 alias edit='subl --new-window'
 alias e=edit
 
