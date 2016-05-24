@@ -68,7 +68,8 @@ alias v='less -RS'
 alias edit='subl --new-window'
 alias e=edit
 
-alias ag='ag --smart-case --pager "less -R -S" --skip-vcs-ignores'
+alias ag='ag --smart-case --pager "less -R -S"'
+alias aga='ag --smart-case --pager "less -R -S" --skip-vcs-ignores'
 alias agp='ag --py'
 alias agj='ag --js'
 
