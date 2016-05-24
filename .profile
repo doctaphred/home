@@ -63,8 +63,20 @@ lsd () {
 
 # ls-after-cd, from http://pastebin.com/VBSQJyeA
 PROMPT_COMMAND='[[ ${__new_wd:=$PWD} != $PWD ]] && ls; __new_wd=$PWD'
+export LESS="\
+--chop-long-lines \
+--HILITE-UNREAD \
+--ignore-case \
+--LINE-NUMBERS \
+--LONG-PROMPT \
+--RAW-CONTROL-CHARS \
+"
 
-alias v='less -RS'
+v () {
+    # View the command's stdout and stderr in less.
+    $@ 2>&1 | less
+}
+
 alias edit='subl --new-window'
 alias e=edit
 
