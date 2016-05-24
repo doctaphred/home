@@ -14,8 +14,7 @@ A new take on dotfiles
     git submodule update --init
 
 
-If direnv is installed:
-    direnv allow
+If direnv is installed: `direnv allow`
 
 
 ## Alternate Installation
