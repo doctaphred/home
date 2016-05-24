@@ -38,7 +38,8 @@ gray='\[\e[0;37m\]'
 # This will get overwritten by liquidprompt, if it's installed.
 export PS1="${bold_green}\u@\h${color_off}:${bold_blue}\w${color_off}$ "
 
-export EDITOR='subl -w'
+# TODO: rmate if remote
+export EDITOR='subl --new-window --wait'
 
 # mkdir, then cd into it. Surprisingly useful.
 take () {
@@ -64,7 +65,8 @@ lsd () {
 PROMPT_COMMAND='[[ ${__new_wd:=$PWD} != $PWD ]] && ls; __new_wd=$PWD'
 
 alias v='less -RS'
-alias e='subl'
+alias edit='subl --new-window'
+alias e=edit
 
 alias ag='ag --smart-case --pager "less -R -S" --skip-vcs-ignores'
 alias agp='ag --py'
