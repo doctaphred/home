@@ -33,6 +33,9 @@ set +h
 
 # cd by typing a directory's name
 shopt -s autocd
+- () {
+    cd -
+}
 
 color_off='\[\e[0m\]'
 black='\[\e[0;30m\]'
