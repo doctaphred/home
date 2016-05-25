@@ -39,8 +39,8 @@ gl () {
     # %s: subject
     # %d: ref names, like the --decorate option of git-log(1)
     # %C(red): switch to red text
-    # %<(17): add spaces on the right to fit the next % to 17 columns
-    git log --pretty=format:'%C(yellow)%h%C(reset) %C(green)%<(17)%an%C(reset) %C(magenta)%<(14)%cr%C(reset)%C(red)%d%C(reset) %s' $@
+    # %<(16): add spaces on the right to fit the next % to 16 columns; truncate the right side
+    git log --pretty=format:'%C(yellow)%h%C(reset) %C(green)%<(16,trunc)%an%C(reset) %C(magenta)%<(14)%cr%C(reset)%C(red)%d%C(reset) %s' $@
 }
 
 alias glg='gl | ag'
