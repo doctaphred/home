@@ -34,11 +34,13 @@ alias gau='gu'
 
 gl () {
     # %h: abbreviated commit hash
-    # %d: ref names, like the --decorate option of git-log(1)
-    # %s: subject
-    # %cr: committer date, relative
     # %an: author name
-    git log --pretty=format:'%C(yellow)%h%C(red)%d%C(reset) %s %C(magenta)(%cr)%C(reset) %C(green)<%an>%C(reset)' $@
+    # %cr: committer date, relative
+    # %s: subject
+    # %d: ref names, like the --decorate option of git-log(1)
+    # %C(red): switch to red text
+    # %<(17): add spaces on the right to fit the next % to 17 columns
+    git log --pretty=format:'%C(yellow)%h%C(reset) %C(green)%<(17)%an%C(reset) %C(magenta)%<(14)%cr%C(reset)%C(red)%d%C(reset) %s' $@
 }
 
 alias glg='gl | ag'
