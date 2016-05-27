@@ -76,4 +76,3 @@ alias amaze='git push'
 # bash completion
 include /usr/local/etc/bash_completion.d/git-completion.bash
 
-}
