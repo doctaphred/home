@@ -75,7 +75,4 @@ alias amaze='git push'
 # bash completion
 include /usr/local/etc/bash_completion.d/git-completion.bash
 
-getignore () {
-    # Retrieve the most recent version of the given .gitignore file
-    curl "https://raw.githubusercontent.com/github/gitignore/master/$1.gitignore"
 }
