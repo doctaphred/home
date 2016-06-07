@@ -16,3 +16,6 @@
 [submodule "dist/fabricate"]
 	path = dist/fabricate
 	url = git@github.com:doctaphred/fabricate.git
+[submodule "private"]
+	path = private
+	url = git@bitbucket.org:doctaphred/private.git
