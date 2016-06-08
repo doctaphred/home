@@ -56,3 +56,34 @@ json-to-yaml () {
     # json-to-yaml < file.json > newfile.yaml
     ruby -ryaml -rjson -e 'puts YAML.dump(JSON.parse(STDIN.read))'
 }
+
+tabs-to-spaces () {
+    # Expand tabs in all files that don't start with a dot
+    find . $@ \! -name ".*" \! -type d -exec bash -c 'expand -t 4' {} \;
+}
+
+samefile () {
+    cmp --silent $@
+}
+
+wake-on-lan () {
+    # http://stackoverflow.com/a/31588036/1752050
+    # example MAC: 11:22:33:44:55:66
+    MAC=$1
+    Broadcast=255.255.255.255
+    PortNumber=4000
+    echo -e $(
+        echo $(
+            printf 'f%.0s' {1..12};
+            printf "$(echo $MAC | sed 's/://g')%.0s" {1..16};
+        ) | sed -e 's/../\\x&/g'
+    ) | nc -w1 -u -b $Broadcast $PortNumber
+}
+
+port-scan() {
+    echo "Scanning $1 for open ports..."
+    for port in {1..65535}
+    do
+      (echo > /dev/tcp/$1/$port) 2>/dev/null && echo $1:$port is open
+    done
+}
