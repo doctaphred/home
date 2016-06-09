@@ -1,1 +1,22 @@
-/Users/fwagner/.config/python/startup.py
+#!/usr/bin/env python
+import os
+import sys
+
+try:
+    import pp
+except ImportError:
+    from pprint import pprint
+    pp = pprint
+
+
+startup_path = os.environ.get('PYTHONSTARTUP')
+if startup_path:
+    with open(startup_path) as f:
+        exec(f.read())
+
+
+args = sys.argv[1:]
+if not args or args[0] in ['-h', '--help', 'help']:
+    print('Evaluate and print some Python')
+else:
+    pp(eval(' '.join(args)))
