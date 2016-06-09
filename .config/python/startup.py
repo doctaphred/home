@@ -29,18 +29,14 @@ except ImportError:
 try:
     import pp
 except ImportError:
-    pass
+    pp = pprint
 
 
 # sys.argv[0] is the empty string if exec'd, as during REPL startup.
-# If this file is instead executed directly, eval its args as Python
+# If this file is instead executed directly, eval its args as Python.
 if sys.argv[0]:
-    command = ' '.join(sys.argv[1:])
-    if not command or '-h' in sys.argv or '--help' in sys.argv:
+    args = sys.argv[1:]
+    if not args or args[0] in ['-h', '--help', 'help']:
         print('Evaluate and print some Python')
     else:
-        result = eval(command)
-        try:
-            pp(result)
-        except NameError:
-            pprint(result)
+        pp(eval(' '.join(args)))
