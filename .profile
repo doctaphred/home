@@ -84,6 +84,9 @@ export LESS="\
 --RAW-CONTROL-CHARS \
 "
 
+# Auto syntax highlight with pygments, if present (-g: "guess")
+exists pygmentize && export LESSOPEN='|pygmentize -g %s'
+
 vv () {
     # View the command's stdout and stderr in less.
     $@ 2>&1 | less
