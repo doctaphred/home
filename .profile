@@ -54,6 +54,8 @@ export PS1="${bold_green}\u@\h${color_off}:${bold_blue}\w${color_off}$ "
 
 # TODO: rmate if remote
 export EDITOR='subl --new-window --wait'
+# TODO: use VISUAL instead of EDITOR?
+export VISUAL='subl --new-window --wait'
 
 # mkdir, then cd into it. Surprisingly useful.
 take () {
