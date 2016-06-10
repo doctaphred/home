@@ -9,6 +9,16 @@ include-all() {
     for f in "$1"/*; do source $f; done
 }
 
+exists () {
+    # Check if the command(s) exist(s)
+    type $@ >/dev/null 2>&1
+}
+
+if-exists () {
+    # Excecute the command, if it exists.
+    exists $1 && $@
+}
+
 export PATH=~/bin:$PATH
 
 # Add platform-specific binaries to path
