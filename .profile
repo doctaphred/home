@@ -1,7 +1,7 @@
 
 # Source the file, if it exists
 include() {
-    [[ -f "$1" ]] && source "$1"
+    test -f "$1" && source "$1"
 }
 
 # Source all files in a directory
