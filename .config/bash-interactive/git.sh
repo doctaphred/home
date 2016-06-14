@@ -61,6 +61,11 @@ bbcl() {
     cd $2
 }
 
+git-set-origin-ssh() {
+    git remote remove origin
+    git remote add origin git@github.com:doctaphred/${PWD##*/}.git
+}
+
 alias such=git
 alias very=git
 alias much=git
