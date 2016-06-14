@@ -98,7 +98,7 @@ def configure(repl):
 
     # Enable 24bit True color. (Not all terminals support this. -- maybe check
     # $TERM before changing.)
-    repl.true_color = True
+    # repl.true_color = True
 
     # Install custom colorscheme named 'my-colorscheme' and use it.
     """
