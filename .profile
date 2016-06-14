@@ -101,7 +101,10 @@ exists pygmentize && export LESSOPEN='|pygmentize -g %s'
 
 vv () {
     # View the command's stdout and stderr in less.
-    $@ 2>&1 | less
+    # Don't preprocess with pygmentize,
+    # since it will likely not work.
+    # (Also it's slow.)
+    $@ 2>&1 | less --no-lessopen
 }
 
 alias v=less
