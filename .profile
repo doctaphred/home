@@ -99,6 +99,13 @@ export LESS="\
 # Auto syntax highlight with pygments, if present (-g: "guess")
 exists pygmentize && export LESSOPEN='|pygmentize -g %s'
 
+mergeout () {
+    # Run the command, merging stderr to stdout.
+    # Also consider `|&` (pipe both stdout and stderr)
+    # (bash only; not available in sh)
+    $@ 2>&1
+}
+
 vv () {
     # View the command's stdout and stderr in less.
     # Don't preprocess with pygmentize,
