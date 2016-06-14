@@ -80,16 +80,3 @@ alias amaze='git push'
 
 # bash completion
 include /usr/local/etc/bash_completion.d/git-completion.bash
-
-git-snapshot() {
-    # Save the full current working tree in a new branch.
-
-    # Add EVERYTHING---new, modified, and deleted files
-    git add --all
-    git commit -m "Snapshot: $1"
-    # Remember this commit in a new branch
-    git branch $1
-    # Restore the HEAD without touching the working tree
-    git reset HEAD~1
-}
-
