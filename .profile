@@ -106,6 +106,11 @@ mergeout () {
     $@ 2>&1
 }
 
+v () {
+    # "View"
+    less $@
+}
+
 vv () {
     # View the command's stdout and stderr in less.
     # Don't preprocess with pygmentize,
@@ -114,7 +119,6 @@ vv () {
     $@ 2>&1 | less --no-lessopen
 }
 
-alias v=less
 alias edit='subl --new-window'
 alias e=edit
 
