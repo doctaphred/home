@@ -3,12 +3,6 @@ include-all ~/.config/bash-interactive
 # direnv: https://github.com/direnv/direnv
 eval "$(direnv hook bash)"
 
-if [ "$PWD" == ~ ]; then
-    # Disable direnv message
-    # (`unset DIRENV_LOG_FORMAT` in ~/.envrc to restore)
-    # TODO: there *must* be a better way!
-    export DIRENV_LOG_FORMAT=
-fi
 
 # Set up preexec
 source ~/dist/preexec/preexec.bash
