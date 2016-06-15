@@ -1,0 +1,21 @@
+{
+  "folders":
+  [
+    {
+      "folder_exclude_patterns":
+      [
+        ".cache",
+        ".node-gyp",
+        ".npm",
+        ".Trash",
+        ".virtualenvs",
+        "dev",
+        "dist",
+        "go",
+        "db",
+        "Library",
+      ],
+      "path": "~"
+    }
+  ]
+}
