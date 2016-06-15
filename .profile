@@ -127,7 +127,7 @@ alias aga='ag --smart-case --pager "less -R -S" --skip-vcs-ignores'
 alias agp='ag --py'
 alias agj='ag --js'
 
-alias ~~='subl ~'
+alias ~~='subl --project ~/~.sublime-project'
 alias pr='subl ~/.profile'
 
 alias ackbar='afplay ~/Dropbox/etc/ackbar.mp3'
