@@ -1,3 +1,4 @@
+alias please=sudo
 
 # Source the file, if it exists
 include() {
