@@ -21,10 +21,11 @@ If direnv is installed: `direnv allow`
 
 Paste this in a terminal, if you dare:
 
-    (url='https://raw.githubusercontent.com/doctaphred/home/master/INSTALL';
-     checksum_url='https://raw.githubusercontent.com/doctaphred/home/master/INSTALL.sha256';
-     script=$(curl -sS $url);
-     checksum=$(echo "$script" | shasum -a256);
-     test "$checksum" = "$(curl -sS $checksum_url)" && sh -c "$script")
+    (
+     script=$(curl -sSL https://git.io/voQ20);
+     checksum=0a7f735423ec4343d17fac83d6a315f698cc665d2b5a3833459ff9cb9439f620;
+     verify=$(echo "$script" | shasum -pa256);
+     test ${verify::64} = $checksum && sh -c "$script";
+    )
 
-See [Sean Cassidy's post](https://www.seancassidy.me/dont-pipe-to-your-shell.html) for an explanation of why not to just pipe curl to shell. (tl;dr: it's about failure modes, not paranoia!)
+See ["Non-security Concerns"](https://sandstorm.io/news/2015-09-24-is-curl-bash-insecure-pgp-verified-install) for an explanation of why not to just pipe curl to shell. (tl;dr: it's about failure modes, not security!)
