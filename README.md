@@ -24,7 +24,7 @@ Paste this in a terminal, if you dare:
     (
      script=$(curl -fsSL https://git.io/voQ20);
      checksum=$(echo "$script" | shasum -pa256 | cut -c-64);
-     test $checksum != 0a7f735423ec4343d17fac83d6a315f698cc665d2b5a3833459ff9cb9439f620 && exit 1;
+     test $checksum = 0a7f735423ec4343d17fac83d6a315f698cc665d2b5a3833459ff9cb9439f620 || exit 1;
      sh -c "$script";
     )
 
