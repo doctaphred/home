@@ -22,10 +22,10 @@ If direnv is installed: `direnv allow`
 Paste this in a terminal, if you dare:
 
     (
-     script=$(curl -sSL https://git.io/voQ20);
-     checksum=0a7f735423ec4343d17fac83d6a315f698cc665d2b5a3833459ff9cb9439f620;
-     verify=$(echo "$script" | shasum -pa256);
-     test ${verify::64} = $checksum && sh -c "$script";
+     script=$(curl -fsSL https://git.io/voQ20);
+     checksum=$(echo "$script" | shasum -pa256 | cut -c-64);
+     test $checksum != 0a7f735423ec4343d17fac83d6a315f698cc665d2b5a3833459ff9cb9439f620 && exit 1;
+     sh -c "$script";
     )
 
 See ["Non-security Concerns"](https://sandstorm.io/news/2015-09-24-is-curl-bash-insecure-pgp-verified-install) for an explanation of why not to just pipe curl to shell. (tl;dr: it's about failure modes, not security!)
