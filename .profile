@@ -49,19 +49,26 @@ shopt -s autocd
 }
 
 color_off='\[\e[0m\]'
+bold='\[\e[1m\]'
 black='\[\e[0;30m\]'
+bold_black='\[\e[01;30m\]'
 red='\[\e[0;31m\]'
+bold_red='\[\e[01;31m\]'
 green='\[\e[0;32m\]'
 bold_green='\[\e[01;32m\]'
 yellow='\[\e[0;33m\]'
+yellow='\[\e[01;33m\]'
 blue='\[\e[0;34m\]'
 bold_blue='\[\e[01;34m\]'
 purple='\[\e[0;35m\]'
+bold_purple='\[\e[01;35m\]'
 cyan='\[\e[0;36m\]'
+bold_cyan='\[\e[01;36m\]'
 gray='\[\e[0;37m\]'
+bold_gray='\[\e[01;37m\]'
 
 # This will get overwritten by liquidprompt, if it's installed.
-export PS1="${bold_green}\u@\h${color_off}:${bold_blue}\w${color_off}$ "
+export PS1="${bold_green}\u${color_off} at ${bold_purple}\h${color_off} in ${bold_blue}\w${color_off} ${bold}$ ${color_off}"
 
 # TODO: rmate if remote
 export EDITOR='subl --new-window --wait'
