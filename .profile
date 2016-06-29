@@ -107,6 +107,11 @@ mergeout () {
     $@ 2>&1
 }
 
+job() {
+    # Start a background process, ignoring stdout and stderr
+    $@ > /dev/null 2>&1 &
+}
+
 v () {
     # "View"
     less $@
