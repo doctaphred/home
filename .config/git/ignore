@@ -1,5 +1,4 @@
-# direnv
-.envrc
+.direnv
 
 .DS_Store
 .AppleDouble
