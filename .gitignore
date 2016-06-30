@@ -10,6 +10,7 @@
 !links/
 !me/
 !scripts/
+!subl/
 
 # ...but still ignore these:
 .config/dconf/
