@@ -13,6 +13,7 @@
         "dist",
         "go",
         "db",
+        "Dropbox",
         "Library",
       ],
       "path": "~"
