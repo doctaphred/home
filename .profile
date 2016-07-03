@@ -95,6 +95,9 @@ lsd () {
     ls -F "$@" | grep \/$
 }
 
+alias rmr='rm -r'
+alias rmrf='rm -rf'
+
 export LESS="\
 --chop-long-lines \
 --HILITE-UNREAD \
