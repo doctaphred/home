@@ -24,7 +24,7 @@ export PATH=~/bin:$PATH
 
 # Add platform-specific binaries to path
 # ex: ~/bin/"$(uname -s)"-"$(uname -m)" => ~/bin/Darwin-x86_64
-export PATH=~/bin/"$(uname -s)"-"$(uname -m)":$PATH
+export PATH=~/bin/"$(uname -s)"-"$(uname -m)":~/bin/"$(uname -s)":$PATH
 
 # ls-after-cd, from http://pastebin.com/VBSQJyeA
 PROMPT_COMMAND='[[ ${__new_wd:=$PWD} != $PWD ]] && ls; __new_wd=$PWD'
