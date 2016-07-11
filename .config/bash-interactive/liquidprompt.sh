@@ -1,1 +1,1 @@
-source ~/dist/liquidprompt/liquidprompt
+# source ~/dist/liquidprompt/liquidprompt
