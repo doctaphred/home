@@ -2,9 +2,15 @@
   "folders":
   [
     {
+      "file_exclude_patterns":
+      [
+        ".bash_history"
+      ],
       "folder_exclude_patterns":
       [
+        "Applications",
         ".cache",
+        ".dropbox",
         ".node-gyp",
         ".npm",
         ".Trash",
