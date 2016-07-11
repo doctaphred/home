@@ -48,7 +48,7 @@ shopt -s autocd
     cd -
 }
 
-color_off='\[\e[0m\]'
+reset='\[\e[0m\]'
 bold='\[\e[1m\]'
 black='\[\e[0;30m\]'
 bold_black='\[\e[01;30m\]'
@@ -68,7 +68,18 @@ gray='\[\e[0;37m\]'
 bold_gray='\[\e[01;37m\]'
 
 # This will get overwritten by liquidprompt, if it's installed.
-export PS1="${bold_green}\u${color_off} at ${bold_purple}\h${color_off} in ${bold_blue}\w${color_off} ${bold}$ ${color_off}"
+function fancy_ps1 {
+    local __user_and_host="${bold_green}\u@\h${reset}"
+    local __venv_func='`[ -n "$VIRTUAL_ENV" ] && echo "[venv] "`'
+    local __venv_info="${bold_cyan}${__venv_func}${reset}"
+    local __working_dir="${bold_blue}\w${reset}"
+    local __git_func='`git branch 2> /dev/null | grep -e ^* | sed -E  s/^\\\\\*\ \(.+\)$/\(\\\\\1\)\ /`'
+    local __git_info="${bold_purple}${__git_func}${reset}"
+    local __prompt="${reset}${bold}$ ${reset}"
+    export PS1="${reset}${__user_and_host} ${__venv_info}${__working_dir} ${__git_info}${__prompt}"
+}
+fancy_ps1
+
 
 # TODO: rmate if remote
 export EDITOR='subl --new-window --wait'
