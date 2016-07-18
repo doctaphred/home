@@ -15,3 +15,5 @@
     ci = commit -v
     co = checkout
     pf = push --force-with-lease
+[credential]
+    helper = osxkeychain
