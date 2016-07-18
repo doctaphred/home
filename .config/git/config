@@ -2,6 +2,7 @@
     editor = subl --new --wait
 [user]
     name = Frederick Wagner
+    email = doctaphred@gmail.com
 [push]
     default = simple
 [rebase]
