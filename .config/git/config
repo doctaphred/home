@@ -3,7 +3,7 @@
 [user]
     name = Frederick Wagner
 [push]
-    default = current
+    default = simple
 [rebase]
     autoSquash = true
     autoStash = true
