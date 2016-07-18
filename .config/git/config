@@ -5,6 +5,8 @@
     email = doctaphred@gmail.com
 [push]
     default = simple
+[merge]
+    ff = only
 [rebase]
     autoSquash = true
     autoStash = true
