@@ -193,6 +193,7 @@ c.InteractiveShell.autocall = 1
 
 # The part of the banner to be printed before the profile
 # c.InteractiveShell.banner1 = 'Python 3.5.2 (default, Jun 29 2016, 13:43:58) \nType "copyright", "credits" or "license" for more information.\n\nIPython 5.0.0 -- An enhanced Interactive Python.\n?         -> Introduction and overview of IPython\'s features.\n%quickref -> Quick reference.\nhelp      -> Python\'s own help system.\nobject?   -> Details about \'object\', use \'object??\' for extra details.\n'
+c.InteractiveShell.banner1 = ''
 
 # The part of the banner to be printed after the profile
 # c.InteractiveShell.banner2 = ''
