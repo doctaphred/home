@@ -192,8 +192,7 @@ c.InteractiveShell.autocall = 1
 # c.InteractiveShell.automagic = True
 
 # The part of the banner to be printed before the profile
-# c.InteractiveShell.banner1 = 'Python 3.5.1 (default, Jan 22 2016, 08:54:32) \nType "copyright", "credits" or "license" for more information.\n\nIPython 4.1.2 -- An enhanced Interactive Python.\n?         -> Introduction and overview of IPython\'s features.\n%quickref -> Quick reference.\nhelp      -> Python\'s own help system.\nobject?   -> Details about \'object\', use \'object??\' for extra details.\n'
-c.InteractiveShell.banner1 = ''
+# c.InteractiveShell.banner1 = 'Python 3.5.2 (default, Jun 29 2016, 13:43:58) \nType "copyright", "credits" or "license" for more information.\n\nIPython 5.0.0 -- An enhanced Interactive Python.\n?         -> Introduction and overview of IPython\'s features.\n%quickref -> Quick reference.\nhelp      -> Python\'s own help system.\nobject?   -> Details about \'object\', use \'object??\' for extra details.\n'
 
 # The part of the banner to be printed after the profile
 # c.InteractiveShell.banner2 = ''
@@ -211,8 +210,8 @@ c.InteractiveShell.banner1 = ''
 # color codes, this capability can be turned off.
 # c.InteractiveShell.color_info = True
 
-# Set the color scheme (NoColor, Linux, or LightBG).
-# c.InteractiveShell.colors = 'LightBG'
+# Set the color scheme (NoColor, Neutral, Linux, or LightBG).
+# c.InteractiveShell.colors = 'Neutral'
 
 #
 # c.InteractiveShell.debug = False
@@ -236,10 +235,13 @@ c.InteractiveShell.banner1 = ''
 # regular output instead.
 # c.InteractiveShell.display_page = False
 
-#
+# (Provisional API) enables html representation in mime bundles sent to pagers.
+# c.InteractiveShell.enable_html_pager = False
+
+# Total length of command history
 # c.InteractiveShell.history_length = 10000
 
-# The number of saved history entries to be loaded into the readline buffer at
+# The number of saved history entries to be loaded into the history buffer at
 # startup.
 # c.InteractiveShell.history_load_length = 1000
 
@@ -266,29 +268,24 @@ c.InteractiveShell.banner1 = ''
 # Automatically call the pdb debugger after every exception.
 # c.InteractiveShell.pdb = False
 
-# Deprecated, will be removed in IPython 5.0, use PromptManager.in_template
+# Deprecated since IPython 4.0 and ignored since 5.0, set
+# TerminalInteractiveShell.prompts object directly.
 # c.InteractiveShell.prompt_in1 = 'In [\\#]: '
 
-# Deprecated, will be removed in IPython 5.0, use PromptManager.in2_template
+# Deprecated since IPython 4.0 and ignored since 5.0, set
+# TerminalInteractiveShell.prompts object directly.
 # c.InteractiveShell.prompt_in2 = '   .\\D.: '
 
-# Deprecated, will be removed in IPython 5.0, use PromptManager.out_template
+# Deprecated since IPython 4.0 and ignored since 5.0, set
+# TerminalInteractiveShell.prompts object directly.
 # c.InteractiveShell.prompt_out = 'Out[\\#]: '
 
-# Deprecated, will be removed in IPython 5.0, use PromptManager.justify
+# Deprecated since IPython 4.0 and ignored since 5.0, set
+# TerminalInteractiveShell.prompts object directly.
 # c.InteractiveShell.prompts_pad_left = True
 
 #
 # c.InteractiveShell.quiet = False
-
-#
-# c.InteractiveShell.readline_parse_and_bind = ['tab: complete', '"\\C-l": clear-screen', 'set show-all-if-ambiguous on', '"\\C-o": tab-insert', '"\\C-r": reverse-search-history', '"\\C-s": forward-search-history', '"\\C-p": history-search-backward', '"\\C-n": history-search-forward', '"\\e[A": history-search-backward', '"\\e[B": history-search-forward', '"\\C-k": kill-line', '"\\C-u": unix-line-discard']
-
-#
-# c.InteractiveShell.readline_remove_delims = '-/~'
-
-#
-# c.InteractiveShell.readline_use = True
 
 #
 # c.InteractiveShell.separate_in = '\n'
@@ -301,6 +298,10 @@ c.InteractiveShell.banner1 = ''
 
 # Show rewritten input, e.g. for autocall.
 # c.InteractiveShell.show_rewritten_input = True
+
+# Enables rich html representation of docstrings. (This requires the docrepr
+# module).
+# c.InteractiveShell.sphinxify_docstring = False
 
 #
 # c.InteractiveShell.wildcards_case_sensitive = True
@@ -399,6 +400,9 @@ c.TerminalInteractiveShell.autoedit_syntax = True
 # e.g::
 #
 #     ipython --HistoryManager.hist_file=/tmp/ipython_hist.sqlite
+#
+# you can also use the specific value `:memory:` (including the colon at both
+# end but not the back ticks), to avoid creating an history file.
 # c.HistoryAccessor.hist_file = ''
 
 #------------------------------------------------------------------------------
@@ -518,7 +522,8 @@ c.TerminalInteractiveShell.autoedit_syntax = True
 # Completer configuration
 #------------------------------------------------------------------------------
 
-# Activate greedy completion
+# Activate greedy completion PENDING DEPRECTION. this is now mostly taken care
+# of with Jedi.
 #
 # This will enable completion on elements of lists, results of function calls,
 # etc., but can be unsafe because the code is actually evaluated on TAB.
@@ -530,6 +535,8 @@ c.TerminalInteractiveShell.autoedit_syntax = True
 
 # Extension of the completer class with IPython-specific features
 
+# DEPRECATED as of version 5.0.
+#
 # Instruct the completer to use __all__ for the completion
 #
 # Specifically, when completing on ``object.<tab>``.
