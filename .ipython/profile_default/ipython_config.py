@@ -23,7 +23,6 @@
 #   - :meth:`init_code`
 
 # Execute the given command string.
-# NOTE: ptipython seems to ignore this setting.
 # c.InteractiveShellApp.code_to_run = ''
 
 # Run the file referenced by the PYTHONSTARTUP environment variable at IPython
@@ -34,7 +33,6 @@
 # c.InteractiveShellApp.exec_files = []
 
 # lines of code to run at IPython startup.
-# NOTE: ptipython seems to ignore this setting.
 c.InteractiveShellApp.exec_lines = [
     '%autoreload 2',
     ]
@@ -150,8 +148,6 @@ c.InteractiveShellApp.gui = 'osx'
 #------------------------------------------------------------------------------
 # TerminalIPythonApp configuration
 #------------------------------------------------------------------------------
-
-# NOTE: ptipython seems to ignore these settings.
 
 # Whether to display a banner upon starting IPython.
 # c.TerminalIPythonApp.display_banner = True
