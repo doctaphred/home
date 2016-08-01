@@ -28,3 +28,13 @@ try:
     import pp
 except ImportError:
     pp = pprint
+
+
+try:
+    __IPYTHON__
+except NameError:
+    pass
+else:
+    print('\nIPython ' + sys.version)
+
+print(sys.executable)
