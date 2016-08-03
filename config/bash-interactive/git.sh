@@ -25,7 +25,7 @@ alias grs='git reset --soft'
 alias gf='git fetch'
 alias gp='git pull'
 alias gpr='git pull --rebase'
-alias gpu='git push'
+alias gpu='git push --set-upstream'
 alias gpuf='git push --force-with-lease'
 
 ga() {
