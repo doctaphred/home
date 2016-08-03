@@ -3,6 +3,8 @@ alias gsh='git show'
 alias gshn='git show --name-only'
 alias gsn='git show --name-only'
 alias gst='git stash'
+alias gstu='git stash --include-untracked'
+alias gsta='git stash --include-untracked'
 alias gsts='git stash show'
 alias gstl='git stash list'
 alias gsl='git stash list'
@@ -23,7 +25,6 @@ alias grs='git reset --soft'
 alias gf='git fetch'
 alias gp='git pull'
 alias gpr='git pull --rebase'
-alias regit='git stash && git pull --rebase && git stash pop'
 alias gpu='git push'
 alias gpuf='git push --force-with-lease'
 
@@ -33,6 +34,7 @@ ga() {
 }
 alias gu='ga --update'
 alias gau='gu'
+alias gcu='git add --update && git status && git commit'
 
 gl () {
     # %h: abbreviated commit hash
@@ -47,6 +49,10 @@ gl () {
 
 alias glg='gl | ag'
 alias gll='git log'
+
+gre() {
+    git rebase --interactive HEAD~@1
+}
 
 gcl() {
     git clone git@$1.git
