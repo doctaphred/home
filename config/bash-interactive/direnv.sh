@@ -1,14 +1,14 @@
-mkvenv() {
+direnv-python() {
     echo 'layout python' >> .envrc
     direnv allow
 }
 
-mkvenv3() {
+direnv-python3() {
     echo 'layout python3' >> .envrc
     direnv allow
 }
 
-usevenv() {
+direnv-usevenv() {
     echo 'source venv/bin/activate' >> .envrc
     direnv allow
 }
