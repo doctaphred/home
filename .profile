@@ -113,7 +113,6 @@ export LESS="\
 --chop-long-lines \
 --HILITE-UNREAD \
 --ignore-case \
---LINE-NUMBERS \
 --LONG-PROMPT \
 --RAW-CONTROL-CHARS \
 "
