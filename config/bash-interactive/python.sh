@@ -1,5 +1,6 @@
-alias pt='python -m ptpython'
-alias ip='ptipython'
+alias ip='python -m IPython'
+alias ip2='python2 -m IPython'
+alias ip3='python3 -m IPython'
 
 alias syspy2='/usr/local/bin/python2'
 alias syspy3='/usr/local/bin/python3'
