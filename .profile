@@ -1,5 +1,10 @@
 alias please=sudo
 
+alias rrm=`which rm`  # "really rm"
+rm() {
+    echo use trash or rrm '("really rm")'
+}
+
 # Source the file, if it exists
 include() {
     test -f "$1" && source "$1"
