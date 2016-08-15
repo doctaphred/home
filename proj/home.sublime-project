@@ -9,7 +9,10 @@
       "folder_exclude_patterns":
       [
         "Applications",
+        ".atom/blob-store",
+        ".atom/compile-cache",
         ".cache",
+        ".direnv",
         ".dropbox",
         ".node-gyp",
         ".npm",
