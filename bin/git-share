@@ -1,0 +1,8 @@
+#!/bin/sh -euvx
+# Push the current index in a new branch.
+
+git commit -m "WIP: $1"
+# Save this commit in a new branch and push it
+git branch $1 && git push -u origin $1 || true
+# Restore the HEAD without touching the index or working tree
+git reset --soft HEAD~1

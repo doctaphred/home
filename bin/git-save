@@ -1,9 +1,7 @@
 #!/bin/sh -euvx
-# Save the full current working tree in a new branch.
+# Save the current index in a new branch.
 
-# Add EVERYTHING---new, modified, and deleted files
-git add --all
-git commit -m "Snapshot: $1"
+git commit -m "WIP: $1"
 # Save this commit in a new branch
 git branch $1 || true
 # Restore the HEAD without touching the index or working tree
