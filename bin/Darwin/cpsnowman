@@ -1,0 +1,5 @@
+#!/bin/sh
+
+printf ☃ | pbcopy
+# Piping the snowman to tee messes it up -.-
+printf ☃'\n'
