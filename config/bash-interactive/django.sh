@@ -1,6 +1,8 @@
 # Django localization utilities
 PATH=$PATH:/usr/local/opt/gettext/bin
 
+alias dj='django-admin'
+
 alias m='./manage.py'
 alias mr='./manage.py runserver'
 alias mrp='./manage.py runserver 0.0.0.0:8000'
