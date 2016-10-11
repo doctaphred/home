@@ -154,7 +154,7 @@ c.InteractiveShellApp.gui = 'osx'
 
 # If a command or file is given via the command-line, e.g. 'ipython foo.py',
 # start an interactive shell after executing the file or command.
-# c.TerminalIPythonApp.force_interact = True
+c.TerminalIPythonApp.force_interact = True
 
 # Start IPython quickly by skipping the loading of config files.
 # c.TerminalIPythonApp.quick = False
