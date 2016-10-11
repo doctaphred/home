@@ -7,4 +7,5 @@ git fetch
 git reset origin/master
 git branch -u origin/master  # if using older version of git
 git submodule update --init
+type direnv >/dev/null 2>&1 && direnv allow
 echo 'Commit any local diffs you want to keep, then `git checkout .`'
