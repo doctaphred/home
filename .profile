@@ -81,7 +81,7 @@ function fancy_ps1 {
     local __git_func='`git branch 2> /dev/null | grep -e ^* | sed -E  s/^\\\\\*\ \(.+\)$/\(\\\\\1\)\ /`'
     local __git_info="${bold_purple}${__git_func}${reset}"
     local __prompt="${reset}${bold}$ ${reset}"
-    export PS1="${reset}${__user_and_host} ${__venv_info}${__working_dir} ${__git_info}${__prompt}"
+    export PS1="${reset}\n${__user_and_host} ${__venv_info}${__working_dir} ${__git_info}\n${__prompt}"
 }
 fancy_ps1
 
