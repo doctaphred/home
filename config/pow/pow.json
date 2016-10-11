@@ -97,7 +97,9 @@
   ],
   "ε=ε=ε=ε=ε=ε=┌(￣ー￣)┘": [
     "fart",
-    "face"
+    "face",
+    "crop",
+    "dusting"
   ],
   "ಠ_ಠ": [
     "look",
@@ -155,5 +157,9 @@
     "flip",
     "doubleflip",
     "face"
+  ],
+  "☃": [
+    "unicode",
+    "snowman"
   ]
 }
