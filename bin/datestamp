@@ -1,0 +1,8 @@
+#!/bin/sh -euvx
+
+# '-u' means UTC for both GNU and BSD date
+# '+%F' is equivalent to '+%Y-%m-%d'
+
+# ex: 2016-11-01
+
+date -u +%Y-%m-%d

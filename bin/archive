@@ -1,0 +1,5 @@
+#!/bin/sh -euvx
+
+# Create a tgz archive of the directory.
+
+tar czfv $1_`date -u +%F-%H%M%S`.tgz $1

@@ -1,0 +1,5 @@
+#!/bin/sh -euvx
+
+# Create a tar snapshot of the directory.
+
+tar cfv $1_`date -u +%F-%H%M%S`.tar $1
