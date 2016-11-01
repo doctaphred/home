@@ -1,0 +1,13 @@
+#!/bin/sh -euvx
+
+# Create a new script in ~/bin
+
+cat >> ~/bin/$1 <<EOF
+#!/bin/sh -euvx
+
+
+EOF
+
+chmod a+x ~/bin/$1
+
+subl ~/bin/$1:3
