@@ -2,12 +2,20 @@ alias ip='python -m IPython'
 alias ip2='python2 -m IPython'
 alias ip3='python3 -m IPython'
 
-alias syspy2='/usr/local/bin/python2'
-alias syspy3='/usr/local/bin/python3'
-alias syspy=syspy3
-alias syspip2='/usr/local/bin/pip2'
-alias syspip3='/usr/local/bin/pip3'
-alias syspip=syspip3
+# Default system Python
+alias syspy='/usr/bin/python'
+
+# Homebrew-installed Python
+alias brewpy2='/usr/local/bin/python2'
+alias brewpy3='/usr/local/bin/python3'
+alias brewpip2='/usr/local/bin/pip2'
+alias brewpip3='/usr/local/bin/pip3'
+
+# macOS-installer Python
+alias macpy2='/Library/Frameworks/Python.framework/Versions/2.7/bin/python2'
+alias macpip2='/Library/Frameworks/Python.framework/Versions/2.7/bin/pip'
+alias macpy3='/Library/Frameworks/Python.framework/Versions/3.5/bin/python3'
+alias macpip3='/Library/Frameworks/Python.framework/Versions/3.5/bin/pip'
 
 export WORKON_HOME=$HOME/.virtualenvs
 export PROJECT_HOME=$HOME/dev
