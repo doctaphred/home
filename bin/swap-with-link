@@ -1,0 +1,10 @@
+#!/bin/sh -eux
+
+# -e  If non interactive then exit immediately if a command fails.
+# -u  Treat unset variables as an error when substituting.
+# -x  Print commands and their arguments as they are executed.
+
+# $1: file to replace with a link to $2
+# $2: new "real" path to move $1 to
+
+mv $1 $2 && ln -s $2 $1
