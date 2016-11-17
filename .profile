@@ -25,6 +25,9 @@ if-exists () {
     exists $1 && $@
 }
 
+# `brew install archey`
+if-exists archey
+
 export PATH=~/bin:$PATH
 
 # Add platform-specific binaries to path
