@@ -28,6 +28,10 @@ alias gpr='git pull --rebase'
 alias gpu='git push --set-upstream'
 alias gpuf='git push --force-with-lease'
 
+gri() {
+    git rebase --interactive HEAD~$1
+}
+
 ga() {
     git add $@
     git status
