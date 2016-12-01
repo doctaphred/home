@@ -28,6 +28,14 @@ alias gpr='git pull --rebase'
 alias gpu='git push --set-upstream'
 alias gpuf='git push --force-with-lease'
 
+# Squash the previous N commits into the N+1th,
+# preserving and amending only the N+1th message.
+gsqn() {
+    git reset --soft HEAD~$1 && git commit --amend
+}
+
+alias gsq='gsqn 1'
+
 gri() {
     git rebase --interactive HEAD~$1
 }
