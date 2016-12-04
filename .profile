@@ -1,4 +1,4 @@
-alias please=sudo
+alias please=sudo  # Mind your manners!
 
 alias rrm=`which rm`  # "really rm"
 rm() {
