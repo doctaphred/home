@@ -1,4 +1,4 @@
-#!/bin/sh -euvx
+#!/bin/sh -eu
 
 # '-u' means UTC for both GNU and BSD date
 # '+%F' is equivalent to '+%Y-%m-%d'
