@@ -1,8 +1,10 @@
-#!/bin/sh -eu
+#!/usr/bin/env ruby
 
-# '-u' means UTC for both GNU and BSD date
-# '+%F' is equivalent to '+%Y-%m-%d'
+# Print a ISO 8601 format UTC timestamp.
+#
+# ex: 2016-12-04T18:20:44.039Z
 
-# ex: 2016-11-01-153353
+# If GNU date is available, use `date -u +%FT%T.%3NZ`
+# or `date -u +%Y-%m-%dT%H:%M:%S.%3NZ` instead.
 
-date -u +%Y-%m-%d-%H%M%S
+puts Time.now.utc.strftime "%Y-%m-%dT%H:%M:%S.%3NZ"
