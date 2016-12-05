@@ -190,4 +190,3 @@ alias chmod-yolo='chmod 777'
 [[ $- = *i* ]] && source ~/.config/bash-interactive.sh
 
 include ~/private/profile.sh
-include ~/local/profile.sh
