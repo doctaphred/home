@@ -28,7 +28,7 @@ if-exists () {
 # `brew install archey`
 if-exists archey
 
-export PATH=~/bin:$PATH
+export PATH=~/bin:~/.local/bin:$PATH
 
 # Add platform-specific binaries to path
 # ex: ~/bin/"$(uname -s)"-"$(uname -m)" => ~/bin/Darwin-x86_64
