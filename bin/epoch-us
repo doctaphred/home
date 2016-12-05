@@ -1,0 +1,5 @@
+#!/usr/bin/env ruby
+
+# Print microseconds since epoch
+
+puts Time.now.utc.strftime "%s.%6N"
