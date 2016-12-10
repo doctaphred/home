@@ -1,0 +1,11 @@
+#!/bin/sh
+
+# FuzzyFind View
+
+# --tac: reverse input order
+# -f: filter mode
+# --no-sort: don't sort
+# --multi: use tab and shift+tab for multiple selections
+# --ansi: render color codes
+
+cat $1 | fzf --tac --no-sort --multi --ansi "${@:2}"
