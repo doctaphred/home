@@ -120,6 +120,7 @@ take () {
 
 # Enable ls colors
 export CLICOLOR=1
+export LSCOLORS=ExFxBxDxCxegedabagacad
 
 alias la='ls -A'
 alias ll='ls -lh'
