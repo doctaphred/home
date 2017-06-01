@@ -1,0 +1,5 @@
+#!/bin/sh -eu
+
+# Create new SSH keys
+
+ssh-keygen -t rsa -b 4096 -C "$(whoami)@$(hostname) $(date +%Y-%m-%d)"
