@@ -1,5 +1,7 @@
 alias please=sudo  # Mind your manners!
 
+alias pseudo=sudo
+
 alias rrm=`which rm`  # "really rm"
 rm() {
     echo use trash or rrm '("really rm")'
