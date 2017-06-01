@@ -1,4 +1,8 @@
 {
+  "( ͡° ͜ʖ ͡°)": [
+    "lenny",
+    "face"
+  ],
   "(J °O°)J": [
     "yelling",
     "face"
@@ -25,6 +29,24 @@
     "flip",
     "rageflip",
     "face"
+  ],
+  "(－‸ლ)": [
+    "facepalm",
+    "face"
+  ],
+  "git diff branch1..branch2 -- path/to/file": [
+    "git",
+    "diff",
+    "two",
+    "versions"
+  ],
+  "http://butt.holdings/hold-onto-your-butts.gif": [
+    "hold",
+    "on",
+    "to",
+    "your",
+    "butts",
+    "gif"
   ],
   "http://i0.kym-cdn.com/photos/images/newsfeed/000/154/912/berneydidnotread.gif": [
     "didnt",
@@ -91,15 +113,36 @@
     "wars",
     "yt"
   ],
+  "yu mo gui gwai fai di zao": [
+    "chant",
+    "jackie",
+    "chan",
+    "adventures"
+  ],
+  "¯\\\\\\_(ツ)\\_/¯": [
+    "shrug",
+    "markdown",
+    "md",
+    "github",
+    "gh"
+  ],
   "¯\\_(ツ)_/¯": [
     "shrug",
+    "shruggie",
     "face"
+  ],
+  "â€™": [
+    "encoding",
+    "bug"
   ],
   "ε=ε=ε=ε=ε=ε=┌(￣ー￣)┘": [
     "fart",
     "face",
     "crop",
     "dusting"
+  ],
+  "λ": [
+    "lambda"
   ],
   "ಠ_ಠ": [
     "look",
@@ -158,8 +201,26 @@
     "doubleflip",
     "face"
   ],
+  "▢": [
+    "empty",
+    "square",
+    "character",
+    "char"
+  ],
   "☃": [
     "unicode",
     "snowman"
+  ],
+  "�": [
+    "unknown",
+    "missing",
+    "character",
+    "char",
+    "bug"
+  ],
+  "💩": [
+    "poo",
+    "poop",
+    "emoji"
   ]
 }
