@@ -4,6 +4,7 @@ This file is meant to be executed on REPL startup.
 See https://docs.python.org/3/using/cmdline.html#envvar-PYTHONSTARTUP
 """
 from collections import *
+from contextlib import *
 from functools import *
 from itertools import *
 
