@@ -29,10 +29,10 @@
 #c.InteractiveShellApp.exec_files = []
 
 ## lines of code to run at IPython startup.
-#c.InteractiveShellApp.exec_lines = []
+c.InteractiveShellApp.exec_lines = ['%autoreload 2']
 
 ## A list of dotted module names of IPython extensions to load.
-#c.InteractiveShellApp.extensions = []
+c.InteractiveShellApp.extensions = ['autoreload']
 
 ## dotted module name of an IPython extension to load.
 #c.InteractiveShellApp.extra_extension = ''
@@ -127,7 +127,7 @@
 
 ## If a command or file is given via the command-line, e.g. 'ipython foo.py',
 #  start an interactive shell after executing the file or command.
-#c.TerminalIPythonApp.force_interact = False
+c.TerminalIPythonApp.force_interact = True
 
 ## Class to use to instantiate the TerminalInteractiveShell object. Useful for
 #  custom Frontends
@@ -156,7 +156,7 @@
 #  it is not applied if there are no more arguments on the line, and '2' for
 #  'full' autocall, where all callable objects are automatically called (even if
 #  no arguments are present).
-#c.InteractiveShell.autocall = 0
+c.InteractiveShell.autocall = 1
 
 ## Autoindent IPython code entered interactively.
 #c.InteractiveShell.autoindent = True
@@ -274,7 +274,7 @@
 ## Set to confirm when you try to exit IPython with an EOF (Control-D in Unix,
 #  Control-Z/Enter in Windows). By typing 'exit' or 'quit', you can force a
 #  direct exit without any confirmation.
-#c.TerminalInteractiveShell.confirm_exit = True
+c.TerminalInteractiveShell.confirm_exit = False
 
 ## Options for displaying tab completions, 'column', 'multicolumn', and
 #  'readlinelike'. These options are for `prompt_toolkit`, see `prompt_toolkit`
@@ -595,4 +595,4 @@
 
 ## If True, any %store-d variables will be automatically restored when IPython
 #  starts.
-#c.StoreMagics.autorestore = False
+c.StoreMagics.autorestore = True
