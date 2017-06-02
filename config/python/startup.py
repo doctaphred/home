@@ -37,16 +37,6 @@ except ImportError:
     pass
 
 
-try:
-    __IPYTHON__
-except NameError:
-    pass
-else:
-    # IPython info
-    # e.g.: IPython 3.5.2 (default, Jun 29 2016, 13:43:58)
-    #       [GCC 4.2.1 Compatible Apple LLVM 7.3.0 (clang-703.0.31)]
-    print('\nIPython ' + sys.version)
-
 # Path to executable
 # e.g.: /usr/local/opt/python3/bin/python3.5
 print(sys.executable)
