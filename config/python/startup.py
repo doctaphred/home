@@ -8,6 +8,10 @@ from contextlib import *
 from functools import *
 from itertools import *
 
+import collections
+import contextlib
+import functools
+import itertools
 import json
 import os
 import random
