@@ -181,7 +181,7 @@ alias agj='ag --js'
 alias ~~='subl --project ~/Dropbox/proj/home.sublime-project'
 alias pr='subl ~/.profile'
 
-alias ackbar='afplay ~/Dropbox/etc/ackbar.mp3'
+alias ackbar='unmute; afplay ~/Dropbox/etc/ackbar.mp3'
 
 alias chmod-yolo='chmod 777'
 
