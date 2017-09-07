@@ -185,6 +185,8 @@ alias ackbar='unmute; afplay ~/Dropbox/etc/ackbar.mp3'
 
 alias chmod-yolo='chmod 777'
 
+alias nuke='rm -rf'
+
 # Only source this file in interactive shells, not from a script or from scp
 [[ $- = *i* ]] && source ~/.config/bash-interactive.sh
 
