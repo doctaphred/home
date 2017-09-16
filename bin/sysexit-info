@@ -1,6 +1,11 @@
 #!/usr/bin/env python3
 """Print some human-friendly information about the given status code."""
-from signal import Signals
+try:
+    from signal import Signals
+except ImportError:
+    # Quietly fail on older Pythons
+    import sys
+    sys.exit(1)
 
 
 info_messages = {
